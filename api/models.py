@@ -17,3 +17,8 @@ class Message(models.Model):
     class Meta:
         # Set the table name.
         db_table = 'message'
+
+    # Define what to output when the model is printed as a string.
+    def __str__(self):
+        # Return the message.
+        return self.message
